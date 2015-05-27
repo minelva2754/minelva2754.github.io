@@ -44,14 +44,30 @@ background-color:black;
 color: white;
 }
 
-.text1{
+.text{
 	font-size: 300%;
 	font-family: 'Oswald', sans-serif;
-
+	position: relative;
+}
+.text > span {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	margin-top: -30px;
+	width: 100%;
+	display: inline-block;
+}
+.img-responsive, .text{
+	height: 400px;
+	width: 100%;
+}
+.img-responsive {
+	background: url(1.jpg);
+	background-size: cover;
 }
 
-.text2{
-	font-size: 300%;
-	font-family: 'Oswald', sans-serif;
-
+@media (max-width: 922px) { 
+	.text > span {
+		margin-top: -60px;
+	}
 }
