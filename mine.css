@@ -18,8 +18,6 @@ html, body ,.top{
 	top: 200px;
 }
 
-
-
 #smallmessage{
 	color: white;
 	font-size: 200%;
@@ -99,7 +97,7 @@ color: white;
 	#bigmessage2 {
 	font-size: 450%;
 	}
-
+}
 #smallmessage2{
 	color: white;
 	font-size: 200%;
