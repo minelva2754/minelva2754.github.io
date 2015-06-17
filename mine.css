@@ -12,7 +12,7 @@ html, body ,.top{
 
 #bigmessage{
 	color: white;
-	font-size: 800%;
+	font-size: 900%;
 	font-family: 'Oswald', sans-serif;
 	position: relative;
 	top: 200px;
@@ -53,7 +53,7 @@ color: white;
 
 .text{
 	font-size: 300%;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'HakusyuGyousyoNenga', sans-serif;
 	position: relative;
 }
 .text > span {
