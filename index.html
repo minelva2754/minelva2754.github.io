@@ -8,78 +8,137 @@
    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="mine.css">
    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" type="text/css" href="blockScroll.css">
 </head>
 <body>
 
-<div class="top" align="center">
+
+<section class="top crossfade" align="center" data-crossfade-start="top.jpg" data-crossfade-end="top2.jpg">
   <div id="bigmessage">BIBORO
   </div>
   <div id="smallmessage">
-  BE FREE. BE BEST.<br>
-  BETTER PROGRAMMING LIFE ALL FOR YOU.<br>
+  より良いプログラミングライフをあなたに
   </div>
+
+<button type="button" class="btn btn-primary btn-lg" id="btn"><a href="http://www.biboro.org/snippet/502" style="color:white;">
+TRY BIBORO
+</a>
+</button>
+
+
+</section>
+
+<div class="problem">
+
 </div>
 
-
+<section class="phone">
 	<div class="rapper1">
 		<div class="row">
-        <div class="col-xs-12 col-sm-6"><div class="text"><span>長いドキュメントに悩まされていませんか?</span>
-        </div></div>
-        <div class="col-xs-12 col-sm-6"><div class="img-responsive">
-          
-        </div></div>
+        <div class="col-xs-12 col-sm-6">
+        <div class="text">
+        <span>
+        DOCUMENTS DISTURB YOU?<br> 
+        ドキュメントに煩わしさを感じたことはありませんか？
+        </span>
+        </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+        <div class="img-responsive">  
+        </div>
+        </div>
+
     </div>
   </div>
 
 	<div class="rapper2">
     <div class="row">
-      	<div class="col-xs-12 col-sm-6"><img src="2.jpg" class="img-responsive">
+      	<div class="col-xs-12 col-sm-6">
+        <img src="2.jpg" class="img-responsive">
         </div>
-        	<div class="col-xs-12 col-sm-6"><div class="text"><span>必要な情報だけ欲しくはないでしょうか?</span>
+        	<div class="col-xs-12 col-sm-6">
+          <div class="text">
+          <span>BE FREE FROM THE PROBLEM.<br>その多くの悩みから解放されたくはないでしょうか
+          </span>
         </div></div>
     </div>
 	</div>
-  
+</section>
 
 <!--経験1-->
-<div class="experience" align="center">
+<section class="experience" align="center">
   
-  <div id="bigmessage2">YOU EXPERIENCED?
+  <div id="bigmessage2">こういった経験はありますか？
   </div>
-  <div id="smallmessage2">PUSH command + A<br>
-  </div>
-
-  <div class="codearea">
+  <div id="smallmessage2">PUSH command + A
   </div>
 
-</div>
+  <div id="smallmessage3">CのHELLO WORLDの書き方
+  </div>
+  <pre class="codearea" align="left">
+<code id="code">
+  #include&lt;stdio.h&gt;
+  int main(){
+    printf("hello world!\n");
+    return 0;
+  }
+</code>
+</pre>
+ 
+  <div id="smallmessage3">C++のHELLO WORLDの書き方
+  </div>
+<pre class="codearea" align="left">
+<code id="code">
+  #include&lt;iostream&gt;
+  using namespace std;
+  int main(){
+    cout&gt;&gt;"hello world!"&gt;&gt;endl;
+    return 0;
+  }
+</code>
+</pre>
+  </div>
+
+</section>
 
 <!-- 経験2-->
-<div class="experience2" align="center">
+<section class="experience2" align="center">
   
+
+  <div class="bigmessage3" align="center">
+  COMMIMG SOON
+  </div>
   <div class="smallmessage3" align="center">
-  SURPRISED?
+  chrome拡張機能で瞬間的にBIBOROへメモ
   </div>
-  <div class="bigmessage3" align="center">HOW ABOUT THIS?
-  </div>
-
-  <div class="codearea2">
-  </div>
+  <img src="CommingSoon.jpg" class="img-responsive img-rounded}" alt="Responsive image" align="center">
 
 
-</div>
-<script type="text/javascript">
-element.onscroll = function()
-{
-  var scrollTop =
-        document.documentElement.scrollTop || // IE、Firefox、Opera
-        document.body.scrollTop;              // Chrome、Safari
 
-    // スクロール範囲の最大のピクセル数
-    var range = this.scrollHeight - this.offsetHeight;
-}
+</section>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="crossfade.jquery.js"></script>
+<script src="script.js"></script>
+<script>
+$(function(){
+   $('.crossfade').crossfade({
+        // ここにオプションを指定する
+        threshold: 0.3, // オプション指定の例。
+        backgroundPosition: 'center center'
+    });
+});
+</script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65309429-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-
 
 
 </body>

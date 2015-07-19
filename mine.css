@@ -1,13 +1,37 @@
-html, body ,.top{
+html, body {
     min-width: 100%;
     height: 100%;
     min-height: 100%;
+ 	background-position: center center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+.crossfade {
+    position: relative;
+}
+
+.section{
+	min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+
+
+.top{
+    min-width: 100%;
+    height: 100%;
+    min-height: 90%;
     background-image:url("top.jpg");
  	background-position: center center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-size: cover;
 	background-color: #464646;
+	z-index: 1;	
+
 }
 
 #bigmessage{
@@ -16,8 +40,19 @@ html, body ,.top{
 	font-family: 'Oswald', sans-serif;
 	position: relative;
 	top: 200px;
+	z-index: 2;
 }
 
+#btn{
+	font-size: 300%;
+	padding-left:30px;
+	padding-right:30px;
+
+	color: white;
+	position: relative;
+	top: 300px;
+	z-index: 3;
+}
 
 @media (max-width: 800px) { 
 	#bigmessage {
@@ -27,13 +62,40 @@ html, body ,.top{
 
 #smallmessage{
 	color: white;
-	font-size: 200%;
+	font-size: 300%;
 	font-family: 'Oswald', sans-serif;
 	position: relative;
 	top: 220px;
+	z-index: 2;
+}
+
+.problem{
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-image:url("problem.jpg");
+ 	background-position: center center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	z-index: 3;	
+}
+
+@media (max-width: 922px){
+	.problem{
+		display: none;
+	}
+}
+
+@media (min-width: 922px){
+	.rapper1,.rapper2{
+		display: none;
+	}
 }
 
 
+@media (max-width: 922px){
 .col-xs-12,.col-sm-6,.row,.container{
 	padding-left:0px;
 	padding-right:0px;
@@ -52,8 +114,8 @@ color: white;
 }
 
 .text{
-	font-size: 300%;
-	font-family: 'HakusyuGyousyoNenga', sans-serif;
+	font-size: 200%;
+	font-family: 'Oswald', sans-serif;
 	position: relative;
 }
 .text > span {
@@ -62,7 +124,8 @@ color: white;
 	top: 50%;
 	margin-top: -30px;
 	width: 100%;
-	display: inline-block;
+	display: block;
+	height: 100%;
 }
 .img-responsive, .text{
 	height: 400px;
@@ -72,11 +135,6 @@ color: white;
 	background: url(1.jpg);
 	background-size: cover;
 }
-
-@media (max-width: 922px) { 
-	.text > span {
-		margin-top: -60px;
-	}
 }
 
 
@@ -87,17 +145,17 @@ color: white;
 	min-width: 100%;
     height: 100%;
     min-height: 100%;
-    background-image:url("experience.jpg");
+
  	background-position: center center;
 	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-size: cover;
-  　background-color: #464646;
+
 }
 
 #bigmessage2{
 	color: white;
-	font-size: 650%;
+	font-size: 500%;
 	font-family: 'Oswald', sans-serif;
 	position: relative;
 	top: 50px;
@@ -118,13 +176,43 @@ color: white;
 	padding-bottom: 80px;
 }
 
+#smallmessage3{
+	color: white;
+	font-size: 200%;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	top: 70px;
+	padding-bottom: 80px;
+}
+
 .codearea{
 	background-color: black;
-	width: 1000px;
-	height: 500px;
+	width: 100%;
+	height: 20%;
 	opacity: 0.6;
 
 }
+@media (max-width: 922px){
+.codearea{
+	background-color: black;
+	width: 100%;
+	height: 20%;
+	opacity: 0.6;
+
+}
+}
+
+
+#code{
+	opacity: 1;
+	color: white;
+	display: block;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left; 
+}
+
 
 @media (max-width: 800px) { 
 	.bigmassage2{
@@ -132,10 +220,6 @@ color: white;
 	top: -30px;
 	}
 
-	.codearea {
-	width: 100%;
-	height: 50%;
-	}
 }
 
 
@@ -156,31 +240,36 @@ color: white;
 }
 
 .smallmessage3{
-	color: black;
+	color: white;
 	font-size: 200%;
 	font-family: 'Oswald', sans-serif;
 	position: relative;
-	top: 70px;
-	padding-bottom: 30px;
+	top: 10px;
+	padding-bottom: 10px;
 }
 
 .bigmessage3{
-	color: black;
+	color: white;
 	font-size: 650%;
 	font-family: 'Oswald', sans-serif;
 	position: relative;
-	top: 50px;
-	padding-bottom: 50px;
+	top: 10px;
+	padding-bottom: 10px;
 
+}
+
+.img-responsive{
+	display: inline-block;
 }
 
 @media (max-width: 800px) { 
 	.bigmessage3 {
 	font-size: 300%;
 	}
+
 	.experience2{
 	min-width: 100%;
-    height: 120%;
+    height: 100%;
     min-height: 100%;
     background-image:url("experience2.jpg");
  	background-position: center center;
@@ -188,22 +277,12 @@ color: white;
     background-attachment: fixed;
 	background-size: cover;
   　background-color: #464646;
-}
+  	}
 
-}
-
-.codearea2{
-	background-color: black;
-	width: 1000px;
-	height: 500px;
-	opacity: 0.6;
-
-}
-
-@media (max-width: 800px) { 
 	.codearea2 {
 	width: 100%;
 	height: 70%;
+
 	}
 }
 
